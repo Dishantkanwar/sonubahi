@@ -1,0 +1,1249 @@
+
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+    <title>Contact Us</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+	scroll-behavior:smooth;
+}    
+body{
+    background-color: rgb(49, 48, 48);
+}
+.nav{
+    background-color: white;
+    padding: 20px;
+}
+.logo{
+    width: 400px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+}
+.menu-right{
+    text-align: right;
+}
+ul li{
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+}
+.spanmenu{
+    font-size: 28px;
+    color: rgb(119, 201, 13) ;
+    cursor: pointer;
+    display: none;
+      
+}
+.a1{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a1:hover{
+    color: black;
+}
+.a2{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a2:hover{
+    color: black;
+}
+.a3{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a3:hover{
+    color: black;
+}
+.a4{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a4:hover{
+    color: black;
+}
+
+
+
+
+
+
+.aboutus{
+    height: 20%;
+    /* border: 1px solid white; */
+    width: 100%;
+        
+    height: 10%;
+    position: relative;
+    bottom: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.aboutus1{
+    position: relative;
+    top: 20%;
+    color: rgb(119, 201, 13) ;;
+    
+}
+.slide-container{
+ width: 80%;
+ margin: auto;
+ position: relative;
+ top: 5%;
+ 
+
+}
+.slide1{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top:45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 8px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+
+.contactus1{
+    display: flex;
+
+    margin: auto;
+    position: relative;
+    top: 10%;
+    /* border: 1px solid white; */
+    height: 80%;
+    width: 90%;
+}
+.contactus2{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 50%;
+}
+.contactus2h{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(119, 201, 13); ;
+}
+.contactus2p{
+    text-align: center;
+    font-size: 30px;
+    color:white ;
+}
+.contactus2p2{
+    text-align: center;
+    font-size: 30px;
+    color:white ;
+}
+
+.ae{
+    color: white;
+    text-decoration: none;
+}
+.ae:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+}
+
+.telcu:hover{
+    color: rgb(119, 201, 13);
+}
+.at1{
+    color: white;
+    text-decoration: none;
+}
+.at1:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+    
+}
+.at2{
+    color: white;
+    text-decoration: none;
+}
+.at2:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactus3{
+    border: none; 
+    height: 100%;
+    width: 50%;
+}
+
+.inputp1{
+    position: relative;
+    top:0%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+.input1{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+.inputp2{
+    position: relative;
+    top:5%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+.input2{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+.inputp3{
+    position: relative;
+    top:5%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+.input3{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+.inputp4{
+    position: relative;
+    top:5%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+.input4{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 25px;
+    height: 150px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+.button1{
+    background-color: rgb(119, 201, 13);
+    border: none;
+    border-radius:20px ;
+    position: relative;
+    top: 100px;
+    left: 10%;
+    text-align: center;
+    height: 70px;
+    width: 100px;
+}
+.button1:hover{
+   background-color: white;
+}
+
+.map{
+    position: relative;
+    top: 15%;
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 300px;
+    margin: auto;
+}
+.mapimg{
+height: 200px;
+width: 300px;
+}
+.maph{
+    color: white;
+}
+.mapa{
+    color: white;
+    text-decoration: none;
+}
+.mapa:hover{
+    color:rgb(119, 201, 13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom{
+
+background-color: white;
+/* width: 101.1%; */
+height: 31%;
+/* border: 1px solid white; */
+position: relative;
+/* right: 0.5%; */
+top: 15%;
+display: flex;
+justify-content: space-around;
+
+}
+.left{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+.lefth{
+font-weight: bold;
+font-style: italic;
+position: relative;
+bottom: 100%;
+color:rgb(119, 201, 13) ;
+}
+
+.left1{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+position: relative;
+top:25px;
+}
+.left1:hover{
+color: black;
+}
+.left2{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+position: relative;
+top: 15px;
+}
+.left2:hover{
+color: black;
+}
+.left3{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+position: relative;
+top: 10px;
+}
+.left3:hover{
+color: black;
+}
+
+
+.mid{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.midh{
+font-weight: bold;
+font-style: italic;
+position: relative;
+top: 40px;
+color:rgb(119, 201, 13) ;
+}
+.midp{
+position: relative;
+top: 25px;
+color:rgb(119, 201, 13) ;
+}
+.midp1{
+    position: relative;
+    top: 10px;
+color:rgb(119, 201, 13) ;
+}
+.midp1:hover{
+color: black;
+}
+.midp2{
+    position: relative;
+    bottom: 10px;
+color:rgb(119, 201, 13) ;
+}
+.midp2:hover{
+color: black;
+}
+
+
+
+
+
+.right{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+
+
+}
+.righth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+position: relative;
+bottom: 20px;
+
+}
+.f{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 30px;
+text-align: center;
+top: 30%;
+}
+.f:hover{
+color: black;
+}
+.i{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 50px;
+top:30%;
+}
+.i:hover{
+color: black;
+}
+.w{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 70px;
+top: 30%;
+}
+.w:hover{
+color: black;
+}
+
+
+
+
+#back_button{
+position: relative;
+top: 20%;
+left: 20px;
+}
+#my_button{
+color: rgb(119, 201, 13) ;
+font-size: 50px;
+border: 1px solid silver;
+border-radius: 100px;
+}
+.last{
+position: relative;
+top: 15.2%;
+background-color: white;
+width: 100%;
+height: 6%;
+/* border: 1px solid white; */
+position: relative;
+
+text-align: center;
+}      
+.lastp{
+position: relative;
+top:20% ;
+/* color:rgb(119, 201, 13) ; */
+color: black;
+}
+
+.blhp{
+    text-decoration: none;
+}
+.bljk{
+    text-decoration: none;
+}
+.bluk{
+    text-decoration: none;
+}
+.midap{
+    text-decoration: none;
+}
+.midam{
+    text-decoration: none;
+}
+.rightaf{
+    text-decoration: none;
+}
+.rightai{
+    text-decoration: none;
+}
+.rightaw{
+    text-decoration: none;
+}
+h1{
+    color: white;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+h2{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+.gp{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    top: 70px;
+}
+.main{
+    border:3px solid rgb(119, 201, 13);
+    height: 300px;
+    width: 700px;
+    position: relative;
+    left: 25%;
+    top: 30px;
+    background-color: white;
+}
+
+.main1{
+    border: 1px solid black;
+    height: 30%;
+    width: 100%;
+}
+.HH{
+    color: rgb(119, 201, 13);
+}
+.main2{
+    border: 1px solid black;
+    height: 70%;
+    width: 100%;
+}
+.H2{
+    text-align: center;
+    color: rgb(119, 201, 13);
+}
+
+.P{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    color: rgb(119, 201, 13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .moun{
+    position: relative;
+    top: 20px;
+}
+.logo{
+    height: 50px;
+    width: 300px;
+    position: relative;
+
+    top: 30px;
+}
+.spanmenu{
+    position: relative;
+    bottom: 15px;
+    display: block;
+  }
+ul li{
+      display: block ;
+  }
+ul {
+    display: none;
+}
+
+.caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+
+.contactus1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    border: 1px solid white;
+    height: 80%;
+    width: 90%;
+}
+.contactus2{
+    border: 1px solid white;
+    height: 100%;
+    width: 50%;
+}
+.contactus2h{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(119, 201, 13); ;
+}
+.contactus2p{
+    text-align: center;
+    font-size: 20px;
+    color:white ;
+}
+.contactus2p2{
+    text-align: center;
+    font-size: 15px;
+    color:white ;
+}
+
+.ae{
+    color: white;
+    text-decoration: none;
+}
+.ae:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+}
+
+.telcu:hover{
+    color: rgb(119, 201, 13);
+}
+.at1{
+    color: white;
+    text-decoration: none;
+}
+.at1:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+    
+}
+.at2{
+    color: white;
+    text-decoration: none;
+}
+.at2:hover{
+    color: rgb(119, 201, 13);
+    text-decoration: none; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactus3{
+    border: 1px solid white;
+    height: 100%;
+    width: 50%;
+}
+
+.inputp1{
+    position: relative;
+    top:5%;
+    left: 5%;
+    font-size: 10px;
+    color: white;
+}
+.input1{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 10px;
+}
+.inputp2{
+    position: relative;
+    top:5%;
+    left: 5%;
+    font-size: 10px;
+    color: white;
+}
+.input2{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 10px;
+}
+.inputp3{
+    position: relative;
+    top:5%;
+    left: 10%;
+    font-size: 10px;
+    color: white;
+}
+.input3{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 10px;
+}
+
+.inputp4{
+    position: relative;
+    top:5%;
+    left: 10%;
+    font-size: 10px;
+    color: white;
+}
+.input4{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 0%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 10px;
+}
+
+.button1{
+    background-color: rgb(119, 201, 13);
+    border: none;
+    border-radius:none;
+    position: relative;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+    height: 40px;
+    width: 60px;
+}
+.button1:hover{
+   background-color: white;
+}
+
+.map{
+    position: relative;
+    top: 15%;
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 300px;
+    margin: auto;
+}
+.mapimg{
+height: 200px;
+width: 300px;
+}
+.maph{
+    color: white;
+}
+.mapa{
+    color: white;
+    text-decoration: none;
+}
+.mapa:hover{
+    color:rgb(119, 201, 13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom{
+
+background-color: white;
+width: 99.5%;
+height: 110%;
+border: 1px solid white;
+position: relative;
+/* right: 0.5%; */
+top: 30%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+}
+.left{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+}
+.lefth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+
+.left1{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left1:hover{
+color: black;
+}
+.left2{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left2:hover{
+color: black;
+}
+.left3{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left3:hover{
+color: black;
+}
+
+
+.mid{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+position: relative;
+top: 10%;
+}
+.midh{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+.midp{
+position: relative;
+
+color:rgb(119, 201, 13) ;
+}
+.midp1{
+position: relative;
+bottom: 20px;
+color:rgb(119, 201, 13) ;
+}
+.midp1:hover{
+color: black;
+}
+.midp2{
+position: relative;
+bottom: 10px;
+color:rgb(119, 201, 13) ;
+}
+.midp2:hover{
+color: black;
+}
+
+
+
+
+
+.right{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+position: relative;
+top: 13%;
+text-align: center;
+}
+.righth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+.f{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 0px;
+
+
+top: 50px;
+}
+.f:hover{
+color: black;
+}
+.i{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 10px;
+top: 50px;
+}
+.i:hover{
+color: black;
+}
+.w{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 20px;
+top: 50px;
+}
+.w:hover{
+color: black;
+}
+#back_button{
+    position: relative;
+    top: -10%;
+    left: 200px;
+}
+#my_button{
+    color: rgb(119, 201, 13) ;
+    font-size: 50px;
+    border: 1px solid silver;
+    border-radius: 100px;
+}
+.last{
+    position: relative;
+    top: 30.5%;
+    background-color: white;
+    width: 100%;
+    height: 6%;
+    /* border: 1px solid white; */
+    position: relative;
+   
+    text-align: center;
+}      
+.lastp{
+    position: relative;
+    top:20% ;
+    /* color:rgb(119, 201, 13) ; */
+    color: black;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top:45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 8px 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.gp{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 40%;
+    top: 70px;
+}
+.main{
+    border:3px solid rgb(119, 201, 13);
+    height: 300px;
+    width: 400px;
+    position: relative;
+    left: 4%;
+    top: 90px;
+    background-color: white;
+}
+
+.main1{
+    border: 1px solid black;
+    height: 30%;
+    width: 100%;
+}
+.HH{
+    font-size: 23px;
+    position: relative;
+    top: 40px;
+    color: rgb(119, 201, 13);
+}
+.main2{
+    border: 1px solid black;
+    height: 70%;
+    width: 100%;
+}
+.H2{
+    text-align: center;
+    color: rgb(119, 201, 13);
+}
+
+.P{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    color: rgb(119, 201, 13);
+}
+
+}
+
+    </style>
+</head>
+<body >
+    <div class="nav">
+        <img class="logo" src=" {% static 'lable.jpg'%}" alt="">
+        <div class="menu-right">
+        <span class="spanmenu" onclick = "myfunction()">&#9776;</span>
+        
+            <ul id="menu">
+            <li><a class="a1" href="/"><i class="fa-solid fa-house-user h"> &nbsp;</i>HOME</a></li>
+            <li><a class="a2" href="/about"><i class="fa-solid fa-person a" ></i> &nbsp;ABOUT US</a></li>
+            <li><a class="a3" href="/tracking"><i class="fa-solid fa-campground t"></i> &nbsp;TRACKING & CAMPING</a></li>
+            <li><a class="a4" href="/contact"><i class="fa-solid fa-phone c"></i>&nbsp;CONTACT US</a></li>
+            <li><a class="a4" href="/booking"><i class="fa-solid fa-book c"></i>&nbsp;BOOKING</a></li>
+        </ul>
+         
+         </div> 
+    </div>
+
+
+<div class="main">
+<div class="main1">
+<h1 class="HH"><i class="fa-solid fa-mountain"></i>HIMACHAL MOUNTAIN VIEWS</h1>
+</div>
+<div class="main2">
+<h2 class="H2">THANK YOU !!!</h2>
+<p class="P">YOUR Submission has been received <br>
+            OUR TECHNICAL TEAM WILL BE CALL YOU.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom" >
+    <div class="left">
+        <h2 class="lefth">PLaces To Visit :</h2>
+        <a class="blhp" href="/hp"> <p class="left1">Himachal Pradesh</p></a>
+        <a class="bljk" href="/jk"> <p class="left2">Jammu & Kashmir</p></a>
+        <a class="bluk" href="/uk"> <p class="left3">Uttarakhand</p></a> 
+        
+   
+        
+    </div>
+    <div class="mid">
+        <h2 class="midh">CONTACT DETAILS :</h2>
+        <p class="midp">Pankaj Niwas<br>sec 1 new shimal<br>Below Hateshwari temple<br>Shimal(H.P)  </p>
+        <a class="midap" href="tel:9318019000"> <p class="midp1"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;9318019000/&nbsp;8629019000</p></a>
+       <a class="midam" href="mailto:himalayatourismshimla@gmail.com"> <p class="midp2"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;himalayatourismshimla@gmail.com</p></a> 
+    </div>
+    <div class="right">
+    <h2 class="righth">Follow the HIMACHAL MOUNTAIN VIEW :</h2>
+    <a class="rightaf" href="https://www.facebook.com/himalayatourismshimla/"><i class="fa-brands fa-facebook f"></i></a>
+    <a class="rightai" href="https://www.instagram.com/tourismhimalaya/"> <i class="fa-brands fa-instagram i"></i></a>
+    <a class="rightaw" href="tel:9318019000"><i class="fa-brands fa-whatsapp w"></i></a>
+
+    </div>
+    <div id="back_button" >
+
+        <button onclick="topFunction()" id="my_button">&uArr;</button>
+        </div>
+</div>
+
+
+<div class="last">
+    <p class="lastp">© Copyright 2021 - Himachal Mountain View</p>
+</div>
+</body>
+<script >
+    function myfunction(){
+        var x=document.getElementById('menu');
+        if(x.style.display=='block')
+        {
+            x.style.display="none";   
+        }
+        else{
+            x.style.display="block" ; 
+        }
+    }
+    
+    
+    let flag=0;
+    function controler(X){
+        flag =flag + X;
+        slideshow(flag);
+        
+    }
+    
+    slideshow(flag);
+    
+    function slideshow(num){
+        let slides=document.getElementsByClassName('slide1');
+        if(num==slides.length){
+          
+            flag=0;
+            num=0;
+        }
+        if(num<0){
+         flag=slides.length-1;
+         num=slides.length-1;
+        }
+    
+        for(let y of slides){
+            y.style.display='none';
+    
+        }
+        slides[num].style.display="block";
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;		
+        }
+  
+</script>
+</html>

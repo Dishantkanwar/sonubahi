@@ -1,0 +1,1859 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'style.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Tracking & Camping</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+	scroll-behavior:smooth;
+}    
+body{
+    background-color: rgb(49, 48, 48);
+}
+.nav{
+    background-color: white;
+    padding: 20px;
+}
+.logo{
+    width: 400px;
+    height: 60px;
+    position: relative;
+    top: 0px;
+}
+.menu-right{
+    text-align: right;
+}
+h3{
+    position: relative;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+ul li{
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    left: 200px;
+}
+.spanmenu{
+    font-size: 28px;
+    color: rgb(119, 201, 13) ;
+    cursor: pointer;
+    display: none;
+      
+}
+.a1{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a1:hover{
+    color: black;
+}
+.a2{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a2:hover{
+    color: black;
+}
+.a3{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a3:hover{
+    color: black;
+}
+.a4{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a4:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.aboutus{
+    height: 20%;
+    /* border: 1px solid white; */
+    width: 100%;
+        
+    height: 10%;
+    position: relative;
+  
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+.aboutus1{
+    position: relative;
+    top: 20%;
+    color: rgb(119, 201, 13) ;;
+    
+}
+.slide-container{
+ width: 80%;
+ margin: auto;
+ position: relative;
+ top: 5%;
+ 
+
+}
+.slide1{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top:45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 8px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+.hptrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.hph{
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+.kgtrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgtrekh{
+    color: white;
+}
+.trek1{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.kgteckp{
+  color: white;
+  font-size: 12px;
+}
+.matrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.matrekh{
+    color: white;
+}
+.trek2{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.mateckp{
+  color: white;
+  font-size: 12px;
+}
+.cktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.cktrekh{
+    color: white;
+}
+.trek3{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.ckteckp{
+  color: white;
+  font-size: 12px;
+}
+.pltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.pltrekh{
+    color: white;
+}
+.trek4{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.plteckp{
+  color: white;
+  font-size: 12px;
+}
+.tttrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.tttrekh{
+    color: white;
+}
+.trek5{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.ttteckp{
+  color: white;
+  font-size: 12px;
+}
+
+
+
+.jktrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.jkh{
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+.kgltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgltrekh{
+    color: white;
+}
+.trek6{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.kglteckp{
+  color: white;
+  font-size: 12px;
+}
+
+.tmltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.tmltrekh{
+    color: white;
+}
+.trek7{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.tmlteckp{
+  color: white;
+  font-size: 12px;
+}
+.nmltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.nmltrekh{
+    color: white;
+}
+.trek8{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.nmleckp{
+  color: white;
+  font-size: 12px;
+}
+.ngltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.ngltrekh{
+    color: white;
+}
+.trek9{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.nglteckp{
+  color: white;
+  font-size: 12px;
+}
+.kgttrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgttrekh{
+    color: white;
+}
+.trek10{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.kgtteckp{
+  color: white;
+  font-size: 12px;
+}
+
+.uktrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.ukh{
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+.kdtrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.kdtrekh{
+    color: white;
+}
+.trek11{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.kdteckp{
+    font-size: 12px;
+  color: white;
+}
+
+.rptrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.rptrekh{
+    color: white;
+}
+.trek12{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.rpteckp{
+  color: white;
+  font-size: 12px;
+}
+
+.kktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.kktrekh{
+    color: white;
+}
+.trek13{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.kkeckp{
+  color: white;
+  font-size: 12px;
+}
+.actrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.actrekh{
+    color: white;
+}
+.trek14{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.acteckp{
+  color: white;
+  font-size: 12px;
+}
+.hktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 50%;
+    height: 110%;
+    position: relative;
+    top: 10%;
+    
+}
+.hktrekh{
+    color: white;
+}
+.trek15{
+    position: relative;
+   align-content: center;
+    
+    height: 400px;
+    width: 100%;
+}
+.hkteckp{
+  color: white;
+  font-size: 12px;
+}
+.bottom{
+
+background-color: white;
+/* width: 101.1%; */
+height: 31%;
+border: 1px solid white;
+position: relative;
+/* right: 0.5%; */
+top: 15%;
+display: flex;
+justify-content: space-around;
+
+}
+.left{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+.lefth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+
+.left1{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left1:hover{
+color: black;
+}
+.left2{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left2:hover{
+color: black;
+}
+.left3{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left3:hover{
+color: black;
+}
+
+
+.mid{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.midh{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.midp{
+position: relative;
+bottom: 10px;
+color:rgb(119, 201, 13) ;
+}
+.midp1{
+position: relative;
+bottom: 20px;
+color:rgb(119, 201, 13) ;
+}
+.midp1:hover{
+color: black;
+}
+.midp2{
+position: relative;
+bottom: 33px;
+color:rgb(119, 201, 13) ;
+}
+.midp2:hover{
+color: black;
+}
+
+
+
+
+
+.right{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+
+
+}
+.righth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+.f{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 30px;
+text-align: center;
+top: 10%;
+}
+.f:hover{
+color: black;
+}
+.i{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 50px;
+top: 10%;
+}
+.i:hover{
+color: black;
+}
+.w{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 70px;
+top: 10%;
+}
+.w:hover{
+color: black;
+}
+
+
+
+
+#back_button{
+position: relative;
+top: 20%;
+left: 20px;
+}
+#my_button{
+color: rgb(119, 201, 13) ;
+font-size: 50px;
+border: 1px solid silver;
+border-radius: 100px;
+}
+.last{
+position: relative;
+top: 15.2%;
+background-color: white;
+width: 100%;
+height: 6%;
+/* border: 1px solid white; */
+position: relative;
+
+text-align: center;
+}      
+.lastp{
+position: relative;
+top:20% ;
+/* color:rgb(119, 201, 13) ; */
+color: black;
+}
+
+.blhp{
+    text-decoration: none;
+}
+.bljk{
+    text-decoration: none;
+}
+.bluk{
+    text-decoration: none;
+}
+.midap{
+    text-decoration: none;
+}
+.midam{
+    text-decoration: none;
+}
+.rightaf{
+    text-decoration: none;
+}
+.rightai{
+    text-decoration: none;
+}
+.rightaw{
+    text-decoration: none;
+}
+#book{
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    color: black;
+    border: none;
+    position: relative;
+    
+}
+#book:hover{
+
+color: rgb(119, 201, 13) ;
+    background-color: black;
+}
+@media only screen and (max-width: 600px) {
+    .moun{
+    position: relative;
+    top: 20px;
+}
+.logo{
+    height: 50px;
+    width: 300px;
+    position: relative;
+
+    top: 30px;
+}
+.spanmenu{
+    position: relative;
+    bottom: 15px;
+    display: block;
+    position: relative;
+    left: 50px;
+  }
+ul li{
+      display: block ;
+      position: relative;
+      left: 50px;
+  }
+  h3{
+    position: relative;
+    top: 30px;
+    font-weight:bold ;
+    position: relative;
+    right: 10px;
+}
+ul {
+    display: none;
+}
+.hptrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.hph{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+.kgtrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgtrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek1{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.kgteckp{
+  color: white;
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+.matrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.matrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek2{
+
+    
+   position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.mateckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+
+.cktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.cktrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek3{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.ckteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+
+.pltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.pltrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek4{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.plteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+.tttrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.tttrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek5{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.ttteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+.jktrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.jkh{
+    font-size: 13px;
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+
+.kgltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height:80%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgltrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek6{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.kglteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+.tmltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.tmltrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek7{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+    
+    
+}
+.tmlteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+.nmltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.nmltrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek8{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.nmleckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+.ngltrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.ngltrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek9{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.nglteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+.kgttrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.kgttrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek10{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.kgtteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+.uktrack{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+.ukh{
+    font-size: 15px;
+    color: white;
+    position: relative;
+    left: 10%;
+    
+}
+
+
+.kdtrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.kdtrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek11{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.kdteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+.rptrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width:60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.rptrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek12{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.rpteckp{
+    font-size: 10px;
+  color: white;
+}
+
+.kktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.kktrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek13{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.kkeckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+.actrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.actrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek14{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.acteckp{
+    font-size: 10px;
+  color: white;
+}
+.hktrek{
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    
+}
+.hktrekh{
+    font-size: 15px;
+    color: white;
+}
+.trek15{
+    position: relative;
+   align-content: center;
+    
+    height: 200px;
+    width: 290px;
+}
+.hkteckp{
+    font-size: 10px;
+  color: white;
+}
+
+
+
+
+
+
+.bottom{
+
+background-color: white;
+width: 99.5%;
+height: 110%;
+/* border: 1px solid white; */
+position: relative;
+/* right: 0.5%; */
+top: 15%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+}
+.left{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+}
+.lefth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+
+.left1{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left1:hover{
+color: black;
+}
+.left2{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left2:hover{
+color: black;
+}
+.left3{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.left3:hover{
+color: black;
+}
+
+
+.mid{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+position: relative;
+top: 10%;
+}
+.midh{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+}
+.midp{
+position: relative;
+bottom: 10px;
+color:rgb(119, 201, 13) ;
+}
+.midp1{
+position: relative;
+bottom: 20px;
+color:rgb(119, 201, 13) ;
+}
+.midp1:hover{
+color: black;
+}
+.midp2{
+position: relative;
+bottom: 33px;
+color:rgb(119, 201, 13) ;
+}
+.midp2:hover{
+color: black;
+}
+
+
+
+
+
+.right{
+/* border: 1px solid black; */
+height: 100%;
+width: 300px;
+position: relative;
+top: 13%;
+text-align: center;
+}
+.righth{
+font-weight: bold;
+font-style: italic;
+color:rgb(119, 201, 13) ;
+
+}
+.f{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 0px;
+
+top: 10%;
+}
+.f:hover{
+color: black;
+}
+.i{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 10px;
+top: 10%;
+}
+.i:hover{
+color: black;
+}
+.w{
+color:rgb(119, 201, 13) ;
+font-size: 30px;
+position: relative;
+left: 20px;
+top: 10%;
+}
+.w:hover{
+color: black;
+}
+#back_button{
+    position: relative;
+    top: -10%;
+    left: 200px;
+}
+#my_button{
+    color: rgb(119, 201, 13) ;
+    font-size: 50px;
+    border: 1px solid silver;
+    border-radius: 100px;
+}
+.last{
+    position: relative;
+    top: 15.2%;
+    background-color: white;
+    width: 100%;
+    height: 6%;
+    /* border: 1px solid white; */
+    position: relative;
+   
+    text-align: center;
+}      
+.lastp{
+    position: relative;
+    top:20% ;
+    /* color:rgb(119, 201, 13) ; */
+    color: black;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top:45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 8px 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+#book{
+    text-decoration: none;
+}
+#book:hover{
+background-color: black;
+}
+}
+    </style>
+</head>
+<body >
+    <div class="nav">
+        <div class="menu-right">
+        <h3><i class="fa-solid fa-mountain"></i>HIMACHAL MOUNTAIN VIEWS </h3>
+        <span class="spanmenu" onclick = "myfunction()">&#9776;</span>
+        
+            <ul id="menu">
+            <li><a class="a1" href="/"><i class="fa-solid fa-house-user h"> &nbsp;</i>HOME</a></li>
+            <li><a class="a2" href="/about"><i class="fa-solid fa-person a" ></i> &nbsp;ABOUT US</a></li>
+            <li><a class="a3" href="/tracking"><i class="fa-solid fa-campground t"></i> &nbsp;TRACKING & CAMPING</a></li>
+            <li><a class="a4" href="/contact"><i class="fa-solid fa-phone c"></i>&nbsp;CONTACT US</a></li>
+            <li><a class="a4" href="/booking"><i class="fa-solid fa-book c"></i>&nbsp;BOOKING</a></li>
+        </ul>
+         
+         </div> 
+    </div>
+<div class="aboutus">
+   <h1 class="aboutus1">Tracking & Camping</h1>
+</div>
+
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'tc.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'tent.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'bornf.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hptrack">
+    <h1 class="hph"> 
+        Tracking and Camping in Himachal Pradesh  
+        </h1>
+        
+</div>
+
+<div class="kgtrek">
+    <h1 class="kgtrekh">
+        1. Kheerganga Trek
+    </h1>
+    <img class="trek1" src=" {% static 'kg trek.jpg'%}" alt="">
+    <p class="kgteckp">Kheer Ganga in Kasol is a beautiful, frothy-white mountain river. It falls from high up in the mountains,<br> 
+        and the only way to reach it is via a short but arduous trek. The trek roughly is of no more than 12 km,<br>  
+        and can be covered in no more than 5 or 6 hours if you take only a couple of short breaks <br><br>
+      <b>  Trekking Days: 1-2 days <br><br>
+           Maximum Altitude: 9,711 ft</b> <br>  <br>
+           <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+</div>
+<div class="matrek">
+    <h1 class="matrekh">
+      2. Malana Village Trek
+    </h1>
+    <img class="trek2" src=" {% static 'matrek.jpg'%}" alt="">
+    <p class="mateckp">Starting from the village of Jari in Himachal, Malana village trek is a 4-kilometer long trail that<br>
+         takes you to one of the oldest villages in India. When you go visit the mountains, if there is one thing <br>
+         that you must  do, is to take a long walk on the narrow winding paths that cut into the hearts of the hills. <br><br>
+      <b>  Trekking Days: 6 days <br><br>
+        Maximum Altitude: 10,000 ft</b> <br> <br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="cktrek">
+    <h1 class="cktrekh">
+        3. Chandrakhani Pass Trek
+    </h1>
+    <img class="trek3" src=" {% static 'cktrek.jpg'%}" alt="">
+    <p class="ckteckp">
+        The Chandrakhani Pass Trek covers the beautiful and magnificent view of Deo Tibba and Pirpanjal .<br> 
+        ranges It stretches from an altitude of two thousand and fifty meters to three thousand six hundred and  <br>
+        sixty meters. It is one of the moderate and low altitude treks in Himachal Pradesh <br><br>
+      <b>  Trekking Days: 3 days <br><br>
+        Maximum Altitude: 12,000 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="pltrek">
+    <h1 class="pltrekh">
+        4. Prashar Lake Trek
+    </h1>
+    <img class="trek4" src=" {% static 'pltrek.jpg'%}" alt="">
+    <p class="plteckp">
+        Prashar Lake is surrounded by the imposing Dhauladhar ranges in Kullu Valley. This trekking spot in <br>
+        Himalayas offers breathtaking 180 degree view of the Dhauladhar, Pir Pinjal and Kinnaur mountain ranges. <br><br>
+      <b>  Trekking Days: 1-2 days <br><br>
+        Maximum Altitude: 8,960 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+
+    </p>
+</div>
+<div class="tttrek">
+    <h1 class="tttrekh">
+       5. Triund Trek
+    </h1>
+    <img class="trek5" src=" {% static 'tttrek.jpg'%}" alt="">
+    <p class="ttteckp">
+        If you are looking for solo treks in Himachal, then you should definitely head to the trails of Triund <br>
+        and have a rendezvous with the mountains. The ranges of Dhauladhar look gigantic and wonderful.<br>
+         Enjoy camping beneath the stars in the night and have a bonfire.  <br><br>
+      <b>  Trekking Days: 2 days <br><br>
+        Maximum Altitude: 9,350 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+
+
+
+
+
+<div class="jktrack">
+    <h1 class="jkh"> 
+        Tracking and Camping in Jammu & Kashmir 
+        </h1>
+        
+</div>
+
+<div class="kgltrek">
+    <h1 class="kgltrekh">
+       1. Kashmir Great Lakes Trek
+    </h1>
+    <img class="trek6" src=" {% static 'kgltrek.jpg'%}" alt="">
+    <p class="kglteckp">Kashmir Great Lakes trek is a mesmerizing trekking expedition of approximately 72kms that a trekker <br> 
+        covers in a period of 7 days. The expedition starts from Sonmarg, ends at Narang and requires trekking  <br>
+        of up to 13 Km in a day. Day to day distance covered is as follows: Sonamarg to Nichnai: 10 km. <br><br> 
+      <b>  Trekking Days: 7 days <br><br>
+        Maximum Altitude: 13,800 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="tmltrek">
+    <h1 class="tmltrekh">
+      2. Tarsar Marsar Trek
+    </h1>
+    <img class="trek7" src=" {% static 'tmltrek.jpg'%}" alt="">
+    <p class="tmlteckp">Tarsar Marsar trek level is easy to moderate. Some portions of the trail have rough patches, <br>
+        steep ascent or descent, and  boulder-filled zones that make this trek a little tricky for beginners. <br><br>
+      <b>  Trekking Days: 7 days <br><br>
+        Maximum Altitude: 13,500 ft.</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="nmltrek">
+    <h1 class="nmltrekh">
+        3. Naranag Mahlish Trek
+    </h1>
+    <img class="trek8" src=" {% static 'nmltrek.jpg'%}" alt="">
+    <p class="nmleckp">
+        The Narang-Gangabal-Mahlish-Trek expedition has a different return-route and it remains open most of <br>
+        the year. The trek starts at Naranag village. It passes through pine forests, meadows and reaches its  <br>
+        destination at the twin alpine lakes Gangabal and Nundkol situated at the foothills of mount Haramukh (5300M) <br><br>
+      <b>  Trekking Days: 6 days <br><br>
+        Maximum Altitude: 17,388 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="ngltrek">
+    <h1 class="ngltrekh">
+        4. Naranag Gangabal Trek
+    </h1>
+    <img class="trek9" src=" {% static 'ngltrek.jpg'%}" alt="">
+    <p class="nglteckp">
+        Gangabal Lake Trek also known as Harmukh valley trek is a last portion of Seven Great alpine lakes of  <br>
+        Sonamarg to Naranag  trek. The Trek begins from a remote valley of Naranag separate from Srinagar to  <br>
+        naranag is  77 km. Naranag is base camp for Harmukh peak trekking (5100 meters)s
+        <br><br>
+      <b>  Trekking Days: 7 days <br><br>
+        Maximum Altitude: 16732 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="kgttrek">
+    <h1 class="kgttrekh">
+       5.Kolahoi Glacier Trek
+    </h1>
+    <img class="trek10" src=" {% static 'kgttrek.jpg'%}" alt="">
+    <p class="kgtteckp">
+        Pahalgam is a more familiar place around Srinagar so if you are reaching on your own, take a shared  <br>
+        vehicle from Srinagar to Pahalgam. It takes about 3 hours to get there. From Pahalgam, Aru is right  <br>
+        across the Lidder River. It takes another half an hour to cover this distance <br><br>
+      <b>  Trekking Days: 3 days <br><br>
+        Maximum Altitude: 12,650 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="uktrack">
+    <h1 class="ukh"> 
+        Tracking and Camping in Uttarakhand 
+        </h1>
+        
+</div>
+
+<div class="kdtrek">
+    <h1 class="kdtrekh">
+       1. Kedartal Trek.    
+    </h1>
+    <img class="trek11" src=" {% static 'kdtrek.jpg'%}" alt="">
+    <p class="kdteckp">The Kedartal trek difficulty is regarded to have a level of moderate to high difficulty.<br>
+        It is definitely not for those who are about to trek for the first time. The lake is one of the highest <br>
+        glacial lakes present in Uttarakhand and to reach the lake one needs to pass difficult terrains. <br><br> 
+      <b>  Trekking Days: 4 days <br><br>
+        Maximum Altitude: 14,700 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="rptrek">
+    <h1 class="rptrekh">
+      2. Rupin Pass Trek
+    </h1>
+    <img class="trek12" src=" {% static 'rptrek.jpg'%}" alt="">
+    <p class="rpteckp">The trek may be drool-worthy but it is a moderate-difficult trek and requires a good level 
+        of physical fitness and a good lung and cardio power, 
+        so make sure you prepare yourself nicely before heading out for trekking to the Rupin Pass Trek. <br><br>
+      <b>  Trekking Days: 7 days <br><br>
+        Maximum Altitude: 15,250 ft.</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="kktrek">
+    <h1 class="kktrekh">
+        3. Kedarkantha Trek.
+    </h1>
+    <img class="trek13" src=" {% static 'kktrek.jpg'%}" alt="">
+    <p class="kkeckp">
+        Especially for first time trekkers, Kedarkantha trek route is easy to trek in and only 25kms in 
+        total which is still easier than a lot of other trekking routes. 
+        Situated in Uttarakhand, this trek is most famous for its Kedarkantha Temple. <br><br>
+      <b>  Trekking Days: 6 days <br><br>
+        Maximum Altitude: 12,500 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="actrek">
+    <h1 class="actrekh">
+        4.Auden's Col Trek
+    </h1>
+    <img class="trek14" src=" {% static 'actrek.jpg'%}" alt="">
+    <p class="acteckp">
+        It is considered one of the most challenging treks in Uttarakhand that takes around 14 to 15 days to complete.
+         While the trek route to Auden's Col is a difficult one – with moraines, glaciers, boulders, steep ridges making
+          things difficult, the reward is equally greater
+        <br><br>
+      <b>  Trekking Days: 14 days <br><br>
+        Maximum Altitude: 18,010 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="hktrek">
+    <h1 class="hktrekh">
+       5.Har Ki Dun Trek.  
+    </h1>
+    <img class="trek15" src=" {% static 'hktrek.jpg'%}" alt="">
+    <p class="hkteckp">
+        The difficulty level of the Har ki Dun trek is easy to moderate due to the fairly difficult trails and
+         trek gradients. Furthermore, the long trekking duration of around 6 days adds to the level of difficulty 
+         of the trek as well
+        <br><br>
+      <b>  Trekking Days: 6 days <br><br>
+        Maximum Altitude: 11,900 ft</b> <br><br>
+        <a id="book" href="/booking"> <button id="book" >BOOKING</button></a>
+    </p>
+</div>
+<div class="bottom" >
+    <div class="left">
+        <h2 class="lefth">PLaces To Visit :</h2>
+        <a class="blhp" href="/hp"> <p class="left1">Himachal Pradesh</p></a>
+        <a class="bljk" href="/jk"> <p class="left2">Jammu & Kashmir</p></a>
+        <a class="bluk" href="/uk"> <p class="left3">Uttarakhand</p></a> 
+        
+   
+        
+    </div>
+    <div class="mid">
+        <h2 class="midh">CONTACT DETAILS :</h2>
+        <p class="midp">Pankaj Niwas<br>sec 1 new shimal<br>Below Hateshwari temple<br>Shimal(H.P)  </p>
+        <a class="midap" href="tel:9318019000"> <p class="midp1"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;9318019000/&nbsp;8629019000</p></a>
+        <a class="midam" href="mailto:himalayatourismshimla@gmail.com"> <p class="midp2"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;himalayatourismshimla@gmail.com</p></a> 
+    </div>
+    <div class="right">
+    <h2 class="righth">Follow the HIMACHAL MOUNTAIN VIEW :</h2>
+    <a class="rightaf" href="https://www.facebook.com/himalayatourismshimla/"><i class="fa-brands fa-facebook f"></i></a>
+    <a class="rightai" href="https://www.instagram.com/tourismhimalaya/"> <i class="fa-brands fa-instagram i"></i></a>
+    <a class="rightaw" href="tel:9318019000"><i class="fa-brands fa-whatsapp w"></i></a>
+
+    </div>
+    <div id="back_button" >
+
+        <button onclick="topFunction()" id="my_button">&uArr;</button>
+        </div>
+</div>
+
+
+<div class="last">
+    <p class="lastp">© Copyright 2021 - Himachal Mountain View</p>
+</div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script >
+    function myfunction(){
+        var x=document.getElementById('menu');
+        if(x.style.display=='block')
+        {
+            x.style.display="none";   
+        }
+        else{
+            x.style.display="block" ; 
+        }
+    }
+    
+    
+    let flag=0;
+    function controler(X){
+        flag =flag + X;
+        slideshow(flag);
+        
+    }
+    
+    slideshow(flag);
+    
+    function slideshow(num){
+        let slides=document.getElementsByClassName('slide1');
+        if(num==slides.length){
+          
+            flag=0;
+            num=0;
+        }
+        if(num<0){
+         flag=slides.length-1;
+         num=slides.length-1;
+        }
+    
+        for(let y of slides){
+            y.style.display='none';
+    
+        }
+        slides[num].style.display="block";
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;		
+        }
+  
+</script>
+</html>

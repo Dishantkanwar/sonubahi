@@ -1,0 +1,584 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Himachal Mountain Views</title>
+    <style>
+
+html{
+	scroll-behavior:smooth;
+}    
+body{
+    background-color: rgb(49, 48, 48);
+}
+.nav{
+    background-color: white;
+    padding: 20px;
+}
+.moun{
+    font-size: 40px;
+    
+    color: rgb(119, 201, 13);
+    position: relative;
+    ;
+}
+label{
+    position: relative;
+   
+    color: rgb(119, 201, 13);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.menu-right{
+    text-align: right;
+}
+ul li{
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+}
+.spanmenu{
+    font-size: 28px;
+    color: rgb(119, 201, 13) ;
+    cursor: pointer;
+    display: none;
+      
+}
+/* .a1{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a1:hover{
+    color: black;
+}
+.a2{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a2:hover{
+    color: black;
+}
+.a3{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a3:hover{
+    color: black;
+}
+.a4{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(119, 201, 13);
+}
+.a4:hover{
+    color: black;
+} */
+
+
+.slide-container{
+ width: 80%;
+ margin: auto;
+ position: relative;
+ top: 5%;
+ 
+
+}
+.slide1{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top:45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 8px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+.info{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid white; */
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.info1{
+    border: 1px solid black;
+    width:400px ;
+    height: 80%;
+text-align: center;
+position: relative;
+top: 10%;    
+}
+.info1:hover{
+    box-shadow: 0 3px 5px 0 rgba(240, 235, 235, 0.863);
+    
+}
+.infoimg{
+    width:400px;
+    height: 100%;
+    position: relative;
+    
+    bottom: 0px;
+    float: left;
+}
+.infoh1{
+    color: white;
+    text-align: center;
+    position: relative;
+  
+}
+.info2{
+    border: 1px solid black;
+    width:400px ;
+    height: 80%;
+text-align: center;
+position: relative;
+top: 10%; 
+}
+.info2:hover{
+    box-shadow: 0 3px 5px 0 rgba(240, 235, 235, 0.863);
+    
+}
+.infoimg{
+    width:400px;
+    height: 100%;
+    position: relative;
+    
+    bottom: 0px;
+    float: left;
+}
+.infoh2{
+    color: white;
+    text-align: center;
+    position: relative; 
+}
+
+.info3{
+    border: 1px solid black;
+    width:400px ;
+    height: 80%;
+text-align: center;
+position: relative;
+top: 10%; 
+}
+.info3:hover{
+    box-shadow: 0 3px 5px 0 rgba(240, 235, 235, 0.863);
+    
+}
+.infoimg{
+    width:400px;
+    height: 100%;
+    position: relative;
+    
+    bottom: 0px;
+    float: left;
+}
+.infoh3{
+    color: white;
+    text-align: center;
+    position: relative; 
+}
+.bottom{
+
+    background-color: white;
+    width: 101.1%;
+    height: 31%;
+    /* border: 1px solid white; */
+    position: relative;
+    right: 0.5%;
+    top: 15%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.left{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 300px;
+    
+
+}
+.lefth{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+}
+
+.left1{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+}
+.left1:hover{
+    color: black;
+}
+.left2{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+}
+.left2:hover{
+    color: black;
+}
+.left3{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+}
+.left3:hover{
+    color: black;
+}
+.mid{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 300px;
+    
+}
+.midh{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+}
+.midp{
+    position: relative;
+    bottom: 10px;
+    color:rgb(119, 201, 13) ;
+}
+.midp1{
+    position: relative;
+    bottom: 20px;
+    color:rgb(119, 201, 13) ;
+}
+.midp1:hover{
+    color: black;
+}
+.midp2{
+    position: relative;
+    bottom: 33px;
+    color:rgb(119, 201, 13) ;
+}
+.midp2:hover{
+    color: black;
+}
+.right{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 300px;
+    
+
+}
+.righth{
+    font-weight: bold;
+    font-style: italic;
+    color:rgb(119, 201, 13) ;
+    
+}
+.f{
+    color:rgb(119, 201, 13) ;
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    text-align: center;
+}
+.f:hover{
+    color: black;
+}
+.i{
+    color:rgb(119, 201, 13) ;
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+}
+.i:hover{
+    color: black;
+}
+.w{
+    color:rgb(119, 201, 13) ;
+    font-size: 30px;
+    position: relative;
+    left: 70px;
+}
+.w:hover{
+    color: black;
+}
+#back_button{
+    position: relative;
+    top: 20%;
+    left: 20px;
+}
+#my_button{
+    color: rgb(119, 201, 13) ;
+    font-size: 50px;
+    border: 1px solid silver;
+    border-radius: 100px;
+}
+.last{
+    position: relative;
+    top: 12.8%;
+    background-color: white;
+    width: 101.1%;
+    height: 6%;
+    /* border: 1px solid white; */
+    position: relative;
+    right: 0.5%;
+    text-align: center;
+}      
+.lastp{
+    position: relative;
+    top:20% ;
+    /* color:rgb(119, 201, 13) ; */
+    color: black;
+}
+.blhp{
+    text-decoration: none;
+}
+.bljk{
+    text-decoration: none;
+}
+.bluk{
+    text-decoration: none;
+}
+.info1h{
+    text-decoration: none   ;
+}
+.info2h{
+    text-decoration: none   ;
+}   
+.info3h{
+    text-decoration: none   ;
+}
+.midap{
+    text-decoration: none;
+}
+.midam{
+    text-decoration: none;
+}
+.rightaf{
+    text-decoration: none;
+}
+.rightai{
+    text-decoration: none;
+}
+.rightaw{
+    text-decoration: none;
+}
+.spanmenu{
+    font-size: 28px;
+    color: rgb(119, 201, 13) ;
+    cursor: pointer;
+    display: none;
+      
+}
+.menu-right{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: black;
+  }
+  .spanmenu{
+    display: block;
+  }
+.h{
+      display: block      ;
+  }
+}
+    </style>
+</head>
+<body >
+<div class="nav">
+    <i class="fa-solid fa-mountain moun"></i>
+    <label>HIMACHAL MOUNTAIN VIEWS</label>
+    <div class="menu-right">
+    <span class="spanmenu">&#9776;</span>
+    
+        <ul>
+        <li><a class="a1" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/homepagesonu.html"><i class="fa-solid fa-house-user h"> &nbsp;</i>HOME</a></li>
+        <li><a class="a2" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/aboutuspagesonu.html"><i class="fa-solid fa-person a" ></i> &nbsp;ABOUT US</a></li>
+        <li><a class="a4" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/trackcamppage.html"><i class="fa-solid fa-campground t"></i> &nbsp;TRACKING & CAMPING</a></li>
+        <li><a class="a5" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/contactuspage.html"><i class="fa-solid fa-phone c"></i>&nbsp;CONTACT US</a></li>
+    </ul>
+     
+</div> 
+</div>
+<div class="slide-container">
+    <div class="slide1">
+        <img   src=" C:\Users\sony\Desktop\Python\html\sonubhai/sonushimla.jpg" alt="">
+        <div class="caption">SHIMLA(HIMACHAL PRADESH)</div>
+        
+    </div>
+    <div class="slide1">
+        <img   src="C:\Users\sony\Desktop\Python\html\sonubhai/sonusrinagar.jpg" alt="">
+        <div class="caption">SRI NAGAR(JAMMU & KASHMIR)</div>
+        
+    </div>
+    
+    <div class="slide1">
+        <img   src=" C:\Users\sony\Desktop\Python\html\sonubhai/sonuganga.jpg" alt="">
+        <div class="caption">GANGA(UTTARAKHAND)</div>
+        
+    </div>
+    <!-- <div class="slide1">
+        <img   src=" C:\Users\sony\Desktop\Python/sonuls.jpg" alt="">
+        <div class="caption">LAHAUL & SPITI</div>
+        
+    </div> -->
+    <div class="slide1">
+        <img   src=" C:\Users\sony\Desktop\Python\html\sonubhai/sonutrack.jpg" alt="">
+        <div class="caption">TRACKING & CAMPING</div>
+        
+    </div>
+    <span class="arrow prev" onclick="controler(-1)">&#10094;</span>
+    <span class="arrow next"onclick="controler(+1)">&#10095;</span>
+ </div>
+</div>
+
+<!-- <div class="info">
+      <div class="info1">
+    
+    
+        <img class="infoimg" src="C:\Users\sony\Desktop\Python\html\sonubhai/info12.jpg" alt="">
+      <a class="info1h" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/hp.html"><h1 class="infoh1">Himachal Pradesh</h1></a>  
+        
+  
+
+    </div>
+            <div class="info2">
+
+             <img class="infoimg" src="C:\Users\sony\Desktop\Python\html\sonubhai/info21.jpg" alt="">
+        <a  class="info2h" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/jk.html"><h1 class="infoh2">Jammu & Kashmir</h1></a> 
+
+            </div>
+                <div class="info3">
+
+                    <img class="infoimg" src="C:\Users\sony\Desktop\Python\html\sonubhai/info31.jpg" alt="">
+              <a class="info3h" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/uk.html">  <h1 class="infoh3">Uttarakhand</h1></a>    
+
+                </div>
+
+</div>
+<div class="bottom" >
+    <div class="left">
+        <h2 class="lefth">PLaces To Visit :</h2>
+        <a class="blhp" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/hp.html"> <p class="left1">Himachal Pradesh</p></a>
+       <a class="bljk" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/jk.html"> <p class="left2">Jammu & Kashmir</p></a>
+       <a class="bluk" href="file:///C:/Users/sony/Desktop/Python/html/sonubhai/uk.html"> <p class="left3">Uttarakhand</p></a> 
+        
+   
+        
+    </div>
+    <div class="mid">
+        <h2 class="midh">CONTACT DETAILS :</h2>
+        <p class="midp">Pankaj Niwas<br>sec 1 new shimal<br>Below Hateshwari temple<br>Shimal(H.P)  </p>
+       <a class="midap" href=""> <p class="midp1"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;9318019000/&nbsp;8629019000</p></a>
+       <a class="midam" href=""> <p class="midp2"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;himalayatourismshimla@gmail.com</p></a> 
+   
+    </div>
+    <div class="right">
+    <h2 class="righth">Follow the HIMACHAL MOUNTAIN VIEW :</h2>
+    <a class="rightaf" href="https://www.facebook.com/himalayatourismshimla/"><i class="fa-brands fa-facebook f"></i></a>
+    <a class="rightai" href="https://www.instagram.com/tourismhimalaya/"> <i class="fa-brands fa-instagram i"></i></a>
+    <a class="rightaw" href=""><i class="fa-brands fa-whatsapp w"></i></a>
+
+    </div>
+    <div id="back_button" >
+
+        <button onclick="topFunction()" id="my_button">&uArr;</button>
+        </div>
+</div>
+
+
+<div class="last">
+    <p class="lastp">© Copyright 2021 - Himachal Mountain View</p>
+</div>
+</body> -->
+<script >
+    function myfunction(){
+        var x=document.getElementById('menu');
+        if(x.style.display=='block')
+        {
+            x.style.display="none";   
+        }
+        else{
+            x.style.display="block" ; 
+        }
+    }
+    
+    
+    let flag=0;
+    function controler(X){
+        flag =flag + X;
+        slideshow(flag);
+        
+    }
+    
+    slideshow(flag);
+    
+    function slideshow(num){
+        let slides=document.getElementsByClassName('slide1');
+        if(num==slides.length){
+          
+            flag=0;
+            num=0;
+        }
+        if(num<0){
+         flag=slides.length-1;
+         num=slides.length-1;
+        }
+    
+        for(let y of slides){
+            y.style.display='none';
+    
+        }
+        slides[num].style.display="block";
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;		
+        }
+  
+</script>
+</html>
